@@ -1,5 +1,27 @@
+html {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: aquamarine;
+    background-color: #FFFFD4;
+    width: 70%;
+    border: 2px solid brown;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    background-color: #FF7F2A;
+}
+
+nav a {
+    color: white;
 }
 
 div#container {
