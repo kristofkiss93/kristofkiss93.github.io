@@ -45,16 +45,17 @@ nav ul {
 nav ul li {
    float: left;
    width: 33%;
+   padding: 2px;
 }
 
 nav ul li a {
-    width: 95%;
+    width: 100%;
     display: block;
     text-decoration: none;
     color: white;
     font-weight: 900;
     font-size: 110%;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
     background-color: #FF7F2A;
 }
