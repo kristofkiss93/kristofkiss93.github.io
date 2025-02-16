@@ -39,20 +39,21 @@ nav ul {
     content: "";
     clear: both;
     display: table;
-
+    width: 100%;
 }
 
 nav ul li {
-    float: left;
-    width: 25%;
+   float: left;
+   width: 33%;
 }
 
 nav ul li a {
-    width: 100px;
+    width: 95%;
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 120%;
+    font-weight: 900;
+    font-size: 110%;
     padding: 10px;
     text-align: center;
     background-color: #FF7F2A;
@@ -79,7 +80,6 @@ div.sights figure img {
     margin: 0 0 0 10px;
     padding: 5px;
     float: right;
-    height: ;
 }
 
 h2 {
