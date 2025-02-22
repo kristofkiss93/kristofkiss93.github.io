@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapcsolat</title>
+    <link rel="stylesheet" href="css/styles2.css">
 </head>
+
 <body>
     <h2>Kapcsolat</h2>
-        <h3>Belépés</h3>
-        <form action="belepes.php" method="get"></form>
-        <label for="loinName">Felhasnálónév:</label>
-        <input type="text" name="user" id="loinName">
-        <input type="submit">
+    <h3>Belépés</h3>
+
+    <div class="content">
+        <div id="form">
+            <form action="">
+                <label for="lastName">Vezetéknév</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Kötelező mező" required>
+                <label for="firstName">Keresztnév</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Kötelező mező" required>
+
+                <label for="webpage">Tetszett a weboldalam?</label>
+                <label for="option-1">Igen</label>
+                <input type="radio" name="choice" id="option-1" value="yes">
+                <label for="option-2">Nem</label>
+                <input type="radio" name="choice" id="option-2" value="no">
+
+                <label for="places">Melyik helyszínt néznéd meg legszívesebben?</label>
+                <label for="Bernina">Bernina-vasút</label>
+                <input type="checkbox" name="place" id="Bernina" value="1">
+                <label for="Matterhorn">Matterhorn</label>
+                <input type="checkbox" name="place" id="Matterhorn" value="2">
+                <label for="Bern">Bern</label>
+                <input type="checkbox" name="place" id="Bern" value="3">
+
+                <label for=""></label>
+                <label for="country">Melyik kontinensre lennél leginkább kíváncsi?</label>
+                <select name="country" id="country">
+                    <option value="Europe">Európa</option>
+                    <option value="America">Amerika</option>
+                    <option value="Asia">Ázsia</option>
+                    <option value="Africa">Afrika</option>
+                    <option value="Australia">Ausztrália</option>
+                </select>
+
+                <label for="feedback"></label>
+                <span>Mi a véleményed az oldalamon látottakról, miről szeretnél legközelebb olvasni?</span>
+                <textarea name="message" id="message" cols="40" rows="5"></textarea>
+
+                <input type="submit" value="Válaszok küldése">
+            </form>
+        </div>
+    </div>
+
+    <div class="main-page">
+        <a href="index.html">Vissza a Főoldalra</a>
+    </div>
+
 </body>
+
 </html>

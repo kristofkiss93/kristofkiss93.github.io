@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 70%;
+    background-color: rgb(161, 195, 224);
+    border: 2px solid rgb(48, 134, 209);
+    margin: auto;
+}
+
+h2 {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+h3 {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+div.content {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+div#form {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(208, 228, 246);
+}
+
+label {
+    display: block;
+}
+
+input#lastName,
+input#firstName,
+select {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+label[for=webpage], label[for=option-1], label[for=option-2] {
+    display: inline-block;
+    margin: 7px 0;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    font-weight: 800;
+    border-radius: 5px;
+    background-color: rgb(0, 229, 229);
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: aquamarine;
+}
+
+div.main-page {
+    padding: 10px;
+    margin: 15px;
+    background: rgb(218, 247, 247);
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+div.main-page:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+div.main-page a{
+    text-decoration: none;
+}
