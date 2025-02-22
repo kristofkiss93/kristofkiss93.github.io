@@ -16,8 +16,8 @@ body {
 }
 
 header {
-   display: block;
-   padding-bottom: 10px;
+    display: block;
+    padding-bottom: 10px;
 }
 
 header img {
@@ -28,7 +28,25 @@ header img {
 }
 
 nav {
+    padding: 10PX;
+    margin: 10PX;
+}
 
+ul {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background: rgb(67, 161, 243);
+    font-size: 130%;
+    padding: 8px;
+    margin: 3px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid black;
 }
 
 h1 {
