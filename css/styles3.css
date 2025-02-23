@@ -18,6 +18,19 @@ h1 {
 }
 
 h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 110%;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
     text-align: left;
     margin: 20px 0;
     font-size: 120%;
@@ -54,6 +67,7 @@ div.left-div a {
     background: rgb(145, 195, 240);
     text-decoration: none;
     font-size: 110%;
+    color: black;
 }
 
 #swiss-pass {
@@ -69,6 +83,7 @@ div.centered-div a {
     background: rgb(145, 195, 240);
     text-decoration: none;
     font-size: 110%;
+    color: black;
 }
 
 #time {
@@ -84,6 +99,7 @@ div.right-div a {
     background: rgb(145, 195, 240);
     text-decoration: none;
     font-size: 110%;
+    color: black;
 }
 
 @media screen and (max-width:700px){
