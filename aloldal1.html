@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Közlekedés</title>
     <link rel="stylesheet" href="css/styles1.css">
 </head>
-<body>
-    <ul>
-        <li><a href="">Vezetés</a></li>
-        <li><a href="">Repülőjárat</a></li>
-        <li><a href="">Vonat</a></li>
-        <li><a href="">Busz</a></li>
-    </ul>
 
-    
+<body>
+
+    <header>
+        <img src="img/Switzerland.jpg" alt="Svájc szép tája">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#car">Személyautó</a></li>
+            <li><a href="#plane">Repülőgép</a></li>
+            <li><a href="#train">Vonat</a></li>
+            <li><a href="#bus">Busz</a></li>
+            <li class="right"><a href="index.html">Vissza a Főoldalra</a></li>
+        </ul>
+    </nav>
+
+    <div class="information">
+        <p>Svájc többféleképpen is megközelíthető Magyarországról:
+            Személyautóval: Az út Budapest és Zürich között kb. 900 km, és nagyjából 9-10 órát vesz igénybe autópályán
+            (Ausztrián keresztül). Fontos a svájci autópálya-matrica megvásárlása.
+            Busszal: Több nemzetközi busztársaság is indít járatokat, például Budapestről Zürichbe, Bázelbe vagy Genfbe.
+            Az út kb. 12-14 óra.
+            Vonattal: Közvetlen éjszakai vonat közlekedik Budapest és Zürich között (Nightjet), amely kényelmes
+            hálókocsis utazást biztosít. A nappali opciók több átszállást igényelnek.
+            Repülővel: Budapestről közvetlen járatok indulnak Zürichbe, Bázelbe és Genfbe. A repülési idő kb. 1,5-2 óra,
+            ami a leggyorsabb opció.
+        </p>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>Utazás</th>
+                <th>Időtartam</th>
+                <th>Költségek</th>
+            </tr>
+            <tr>
+                <td id="car">Személyautó</td>
+                <td>9 óra 3 perc</td>
+                <td>75261 Ft - 108710 Ft</td>
+            </tr>
+            <tr>
+                <td id="plane">Repülőgép</td>
+                <td>4 óra 30 perc</td>
+                <td>18400 Ft - 93800 Ft</td>
+            </tr>
+            <tr>
+                <td id="train">Vonat</td>
+                <td>11 óra 49 perc</td>
+                <td>58950 Ft - 86950 Ft</td>
+            </tr>
+            <tr>
+                <td id="bus">Busz</td>
+                <td>14 óra 50 perc</td>
+                <td>32950 Ft - 47950 Ft</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1656319.2936066568!2d7.670291570822167!3d46.87911943977363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2zU3bDoWpj!5e1!3m2!1shu!2shu!4v1740300347542!5m2!1shu!2shu"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
 
 </body>
+
 </html>
