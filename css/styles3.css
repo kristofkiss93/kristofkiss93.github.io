@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(161, 195, 224);
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+h2 {
+    text-align: left;
+    margin: 20px 0;
+    font-size: 120%;
+}
+
+div {
+    height: 400px;
+    border: 1px solid black;
+}
+
+div.left-div,
+div.right-div {
+    width: 20%;
+    background:  rgb(208, 228, 246);
+    float: left;
+}
+
+div.centered-div {
+    width: 60%;
+    float: left;
+    background:  rgb(208, 228, 246);
+}
+
+#prices {
+    margin-bottom: 20px;
+}
+
+div.left-div a {
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+    width: 35%;
+    border: 2px solid rgb(48, 134, 209);
+    background: rgb(145, 195, 240);
+    text-decoration: none;
+    font-size: 110%;
+}
+
+#swiss-pass {
+    margin-bottom: 20px;
+}
+
+div.centered-div a {
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+    width: 35%;
+    border: 2px solid rgb(48, 134, 209);
+    background: rgb(145, 195, 240);
+    text-decoration: none;
+    font-size: 110%;
+}
+
+#time {
+    margin-bottom: 20px;
+}
+
+div.right-div a {
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+    width: 35%;
+    border: 2px solid rgb(48, 134, 209);
+    background: rgb(145, 195, 240);
+    text-decoration: none;
+    font-size: 110%;
+}
+
+@media screen and (max-width:700px){
+    div.left-div,
+    div.right-div,
+    div.centered-div {
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+}
+
