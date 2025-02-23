@@ -62,7 +62,7 @@ div.left-div a {
     display: block;
     padding: 10px;
     margin: 5px auto;
-    width: 35%;
+    width: 40%;
     border: 2px solid rgb(48, 134, 209);
     background: rgb(145, 195, 240);
     text-decoration: none;
@@ -78,7 +78,7 @@ div.centered-div a {
     display: block;
     padding: 10px;
     margin: 5px auto;
-    width: 35%;
+    width: 40%;
     border: 2px solid rgb(48, 134, 209);
     background: rgb(145, 195, 240);
     text-decoration: none;
@@ -94,7 +94,7 @@ div.right-div a {
     display: block;
     padding: 10px;
     margin: 5px auto;
-    width: 35%;
+    width: 40%;
     border: 2px solid rgb(48, 134, 209);
     background: rgb(145, 195, 240);
     text-decoration: none;
