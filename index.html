@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="item1">
+        <img src="img/beach.jpg" alt="Nice sunset colors at the beach" width="988" height="400">
+    </div>
+
+    <div class="grid-container">
+    
+        <div class="item2">
+            <h2 id="menu">Magyarország legnépszerűbb tavai</h2>
+            <div class="menu">
+                <a href="#sec1">Balaton</a>
+                <a href="#sec2">Tisza-tó</a>
+                <a href="#sec3">Szelidi-tó</a>
+            </div>
+            
+            <div id="content">
+                <h2 id="menu">Űrlap - Lépjen kapcsolatba velünk</h2>
+                <h3>Kérem töltse ki a jelentkezési űrlapot:</h3>
+                <form action="">
+                    <label for="name">Név:</label>
+                    <input type="text" id="name" name="name" placeholder="Kérlek, add meg a teljes nevedet!" required>
+                    <label for="phone">Telefonszám:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Kérlek, add meg a telefonszámodat!" required>
+                    <label for="email">Email cím:</label>
+                    <input type="email" id="email" name="email" placeholder="Kérlek, add meg az email címedet!" required>
+                    <label for="lake">Melyik tó érdekli?</label>
+                    <select name="lake" id="lake" size="3">
+                        <option value="Balaton">Balaton</option>
+                        <option value="Tisza-tó">Tisza-tó</option>
+                        <option value="Szelidi-tó">Szelidi-tó</option>
+                    </select>
+                    <label for="hotel">Milyen szállást keres?</label>
+                    <select name="hotel" id="hotel" size="3" multiple>
+                        <option value="Szálloda">Szálloda</option>
+                        <option value="Apartmanház">Apartmanház</option>
+                        <option value="Kemping">Kemping</option>
+                    </select>
+                    <label for="food">Milyen ellátás legyen?</label>
+                    <select name="food" id="food" size="4">
+                        <option value="Teljes ellátás">Teljes ellátás</option>
+                        <option value="Fél panzió">Fél panzió</option>
+                        <option value="Csak reggeli">Csak reggeli</option>
+                        <option value="Nem kérek ellátást">Nem kérek ellátást</option>
+                    </select>
+                    <label for="message">Egyéb üzenet:</label>
+                    <textarea name="message" rows="10" cols="30" placeholder="Ide írhatja egyéb üzenetét:"></textarea>
+                    <input type="submit" value="Mehet!">
+                </form>
+            </div>
+
+        </div>
+        
+            <div class="item3" id="sec1">
+                <h2>Balaton</h2>
+                <img src="img/balaton.jpg" alt="Balaton és a lenyűgöző nyári naplemente">
+                <p>A Balaton Magyarország legnagyobb tava, amely a Dunántúlon helyezkedik el, Dél-Dunántúl és Észak-Dunántúl
+                    között. Gyakran nevezik a "magyar
+                    tengernek" is a mérete illetve a turisztikai jelentősége miatt, amely nem csak nyáron jelentős. A tó
+                    partján számos híres üdülőváros található,
+                    mint például Siófok, Balatonfüred, Balatonlelle és Keszthely. A Balaton vize nyáron kellemesen meleg,
+                    így ideális
+                    fürdőzésre és vízi sportokra is. Az északi part dombosabb, míg a déli part laposabb, így más-más élményt
+                    nyújt a látogatóknak, akár a látványt tekintve, akár a fürdőzi .</p>
+                <p>A Badacsony környéke híres a szőlőtermesztésről és a kiváló borokról. Télen a Balaton gyakran befagy, és
+                    sokan korcsolyázásra vagy fakutyázásra használják. A Balaton-felvidéki Nemzeti Park gazdag természeti és
+                    kulturális értékekkel rendelkezik. A tó vize sekély, ezért gyorsan felmelegszik a nyári hónapokban. A
+                    Balaton környéke számos fesztiválnak ad otthont, például a Balaton Sound és a Művészetek Völgye.</p>
+            </div>
+            <div class=" item4" id="sec2">
+                <h2>Tisza-tó</h2>
+                <img src="img/tiszato.jpg" alt="Tisza-tó látképe kenusokkal és egy kilátóval">
+                <p>A Tisza-tó Magyarország második legnagyobb tava, amelyet mesterségesen hoztak létre az 1970-es években. A
+                    tó a Tisza folyó vizének felduzzasztásával jött létre, így egyedülálló ökoszisztémát teremtett. A
+                    Tisza-tavi madárrezervátum Európa egyik legjelentősebb vizes élőhelye. A tó ideális helyszín horgászok,
+                    kajakosok és természetkedvelők számára. A Poroszlói Ökocentrum interaktív kiállításai révén bemutatja a
+                    tó élővilágát.</p>
+                <p>A tó környékén több kerékpárút is található, így biciklivel könnyen körbejárható. A Tisza-tó vize sekély
+                    és gyorsan felmelegszik, ezért nyáron fürdőzésre is alkalmas. A természetbarátok számára a vízi túrák
+                    lehetőséget adnak a nádrengeteg és a rejtett csatornák felfedezésére. A tóhoz tartozó holtágak és
+                    szigetek változatos élőhelyeket biztosítanak számos állatfaj számára. Egyre népszerűbb turisztikai
+                    célpont, különösen a természetkedvelők és az aktív kikapcsolódást keresők körében.</p>
+            </div>
+            <div class="item5" id="sec3">
+                <h2>Szelidi-tó</h2>
+                <img src="img/szelidito.jpg" alt="A Szelidi-tó egyik partszakasza">
+                <p>A Szelidi-tó Bács-Kiskun megyében található, és a Duna egyik hajdani holtágából alakult ki. Ez az egyik
+                    legmelegebb vizű természetes tó Magyarországon. Vize enyhén sós és gyógyhatású, ezért sokan keresik fel
+                    egészségügyi célból is. A tó népszerű fürdőhely, ahol homokos part és sekély víz várja a látogatókat. A
+                    környéken jól kiépített üdülőtelepek és kempingek találhatók.</p>
+                <p>A horgászok számára kiváló lehetőségeket kínál, hiszen sokféle halfaj él a vizében. A parton számos
+                    vendéglátóhely és szórakozási lehetőség várja a látogatókat. A természetkedvelők számára a tó körüli
+                    tanösvény és a nádas érdekes látnivalókat kínál. Vize nyáron gyorsan felmelegszik, így ideális a
+                    családok számára is. A Szelidi-tó csendesebb, nyugodtabb légköre vonzza azokat, akik a Balaton tömegét
+                    szeretnék elkerülni.</p>
+            </div>
+
+        <div class="item6">
+            <div class="bottom">
+                <a href="#">Ugrás az oldal tetejére!</a>
+            </div>
+            <div class="bottom">
+                &copy; 2025 Kiss Márton Krisóf - Prooktatás
+            </div>
+            <div class="bottom">
+                <a href="#content">Irány az Űrlap!</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+
+
+</body>
+
+</html>
