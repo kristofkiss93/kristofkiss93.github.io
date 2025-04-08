@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiss Márton Kristóf JS házi_2</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+h1 {
+    padding-bottom: 30px;
+}
+
+  #slider {
+    width: 900px; /* 3 kép szélessége */
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .slide-container {
+    width: 1200px; /* Összes slide szélessége */
+    position: relative;
+    transition: left 0.5s ease-in-out;
+  }
+
+  .slide {
+    width: 300px;
+    float: left;
+  }
+
+  .slide img {
+    width: 100%;
+    display: block;
+    border: 0;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background: #555;
+  }
+
+  .controls {
+    text-align: center;
+    padding-top: 10px;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1>Klasszikus és modern amerikai autók</h1>
+
+<div id="slider">
+  <div class="slide-container">
+    <!-- Itt cseréld le a képek útvonalát a saját képeidre -->
+    <div class="slide"><img src="img/chevrolet camaro classic.jpg" alt="Slide 1" /></div>
+    <div class="slide"><img src="img/chevy camaro new resize.jpg" alt="Slide 2" /></div>
+    <div class="slide"><img src="img/dodge charger classic.jpg" alt="Slide 3" /></div>
+    <div class="slide"><img src="img/dodge challenger_2 resize.jpeg" alt="Slide 4" /></div>
+    <div class="slide"><img src="img/ford mustang classic.jpg" alt="Slide 5" /></div>
+    <div class="slide"><img src="img/ford mustang new resize.jpg" alt="Slide 6" /></div>
+  </div>
+</div>
+
+<div class="controls">
+  <button id="prev">❮ Előző</button>
+  <button id="next">Következő ❯</button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.slide-container');
+  const slides = Array.from(slider.children);
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  let counter = 0;
+
+  // Beállítjuk a slider konténer szélességét, hogy pontosan illeszkedjen a képekhez
+  slider.style.width = `${slides.length * slideWidth}px`;
+
+  // Előző és következő gombok kezelése
+  document.getElementById('next').addEventListener('click', () => {
+    moveSlider(1);
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+    moveSlider(-1);
+  });
+
+  function moveSlider(direction) {
+    counter += direction;
+    if (counter >= slides.length - 2) {
+      counter = 0; // Ha az utolsó képre lépne, ugorjon vissza az elsőre
+    } else if (counter < 0) {
+      counter = slides.length - 3; // Az utolsó előtti képre ugrik vissza balra
+    }
+    slider.style.transition = 'transform 0.5s ease-in-out';
+    slider.style.transform = `translateX(-${counter * slideWidth}px)`;
+  }
+});
+
+</script>
+
+</body>
+</html>
