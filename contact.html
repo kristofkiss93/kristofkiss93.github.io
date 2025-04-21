@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Autócsodák a világ körül, a legkülönlegesebb autók egy helyen, a világ legerősebb, legdrágább, leggyorsabb és legszebb autói képekkel és adatokal.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Kiss Márton Kristóf">
+    <title>Kiss Márton Kristóf vizsgamunka | Autócsodák</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="records.html">Records</a>
+                <a href="muscle.html">Muscle Cars</a>
+                <a href="future.html">Future</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </header>
+
+        <main class="contact-main">
+            <div class="contact-container">
+                <!-- LEFT SIDE: Info + Map -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><i class="fa fa-envelope"></i> info@autowonders.com</p>
+                    <p><i class="fa fa-phone"></i> +36 30 123 4567</p>
+                    <p><i class="fa fa-map-marker"></i> Budapest, Hungary</p>
+                    <p><i class="fa fa-clock-o"></i> Mon - Fri: 9:00 AM - 5:00 PM</p>
+
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: Contact form -->
+                <div class="contact-form">
+                    <h1>Get in Touch</h1>
+                    <p>Have a question or message? Fill out the form and we'll get back to you shortly!</p>
+                    <form action="#">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email address" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Your phone number">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/topgear" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/topgear" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://x.com/bbc_topgear" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/topgear" target="_blank"><i class="fa fa-youtube-play"></i></a>
+            </div>
+        </main>
+
+        <section class="quote-section">
+            <blockquote>
+                <p>"Straight roads are for fast cars, turns are for fast drivers."</p>
+                <cite>- Colin McRae</cite>
+            </blockquote>
+            <div class="cta-text">
+                <h2>Driven by Passion</h2>
+                <p>Whether you're here to admire, connect, or get in touch, we're excited to hear from you. Let's build
+                    something great together.</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; Kiss Márton Kristóf 2025 | All rights reserved.
+        </footer>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
