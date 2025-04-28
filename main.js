@@ -42,6 +42,28 @@ document.querySelectorAll('.topnav a').forEach(link => {
   }
 });
 
+//Header button script
+
+function scrollToMainContent() {
+  const mainSection = document.getElementById('main-content');  // Megkeressük a main szakaszt
+  mainSection.scrollIntoView({ behavior: 'smooth' });  // Görgetés a szakaszhoz
+}
+
+
+
+
+//Records page script
+
+const cards = document.querySelectorAll('.speed-card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+
+
+
 
 
 //Future page script

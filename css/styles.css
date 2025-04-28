@@ -9,11 +9,19 @@ html {
 }
 
 body {
-    background-color: white;
+    background: linear-gradient(135deg,
+            #f0f4f8 0%,
+            #e6eef5 25%,
+            #dde7ef 50%,
+            #d4e0ea 75%,
+            #cbd9e4 100%);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
+
+
+
 
 .container {
     display: grid;
@@ -31,8 +39,8 @@ body {
 }
 
 .container>* {
-    padding: 30px;
-    background-color: #d9e3ed;
+    /*padding: 30px;
+    background-color: #d9e3ed;*/
 }
 
 h1 {
@@ -67,35 +75,39 @@ header {
 
 div.topnav {
     overflow: hidden;
-
-    /* Egységes pozíció és méret a menüsornak minden oldalon */
-    .topnav {
-        position: relative;
-        top: 42px;
-        /* vagy amennyi a többi oldalon van */
-        padding-top: 40px;
-        /* vagy amennyi pontosan kell */
-        height: 80px;
-        /* opcionális */
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 div.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 20px;
+    padding: 10px 16px;
     text-decoration: none;
-    font-size: 23px;
-    margin-top: 42px !important;
-    margin-top: 0;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 8px;
     line-height: 40px;
-    /* vagy 80px, hogy középre essen */
+    transition: background-color 0.3s ease;
 }
 
 div.topnav a:hover {
     background-color: #ddd;
     color: black;
+    border-radius: 10px;
 }
 
 div.topnav a.active {
@@ -108,10 +120,106 @@ div.topnav .icon {
     display: none;
 }
 
+/* New Header content styles */
+.header-content {
+    position: absolute;
+    top: 50%;
+    /* Adjust to vertically center */
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    z-index: 20;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #f2f2f2;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #00aac4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0077cc;
+}
+
+
+
+body.index-page header {
+    background-image: url(../img/ferrari\ classic.jpg);
+    /* ide tedd az elektromos autós képet */
+}
+
 
 
 main {
     grid-area: main;
+}
+
+.hero-introduction {
+    background-image: url(../img/auto_legend.jpg);
+    /* Választhatsz egy ikonikus autó képét */
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-introduction-content {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.hero-introduction h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-introduction p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button {
+    background-color: #00aac4;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #008c97;
 }
 
 
@@ -133,6 +241,7 @@ main {
 .history-section {
     padding: 60px 20px;
     text-align: center;
+    font-size: 19px;
 }
 
 .history-section h2 {
@@ -165,16 +274,99 @@ main {
 }
 
 .history-icon {
-    font-size: 35px;
-    color: #00aac4;
+    font-size: 38px;
+    color: #89b8e7;
     margin-bottom: 20px;
 }
+
+.auto-icons {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.auto-icons-content {
+    text-align: center;
+}
+
+.auto-icons h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.auto-icons-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.auto-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.auto-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.auto-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+
 
 
 
 
 section {
     grid-area: section;
+    border-radius: 20px;
+}
+
+.intro-text-index {
+    max-width: 900px;
+    margin: 60px auto 40px auto;
+    text-align: center;
+    background: linear-gradient(135deg, #fefefe, #fff6f1);
+    /* világos narancs árnyalat */
+    padding: 40px;
+    border-radius: 16px;
+    border: 3px solid #FF9F55;
+    box-shadow: 0 4px 20px rgba(255, 159, 85, 0.25);
+    transition: all 0.3s ease;
+}
+
+.intro-text-index h2 {
+    font-size: 2.3em;
+    margin-bottom: 20px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro-text-index p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin: 12px 0;
+    color: #444;
+}
+
+.highlight {
+    color: #FF9F55;
 }
 
 div.timeline {
@@ -276,6 +468,10 @@ div.content {
     background-color: white;
     position: relative;
     border-radius: 6px;
+    border: 3px solid #FF9F55;
+    /* teljes narancs border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
 }
 
 .containerleft,
@@ -293,6 +489,11 @@ div.content {
 
 
 /*Records page code*/
+
+body.records-page header {
+    background-image: url(../img/bugatti\ chiron_10.jpg);
+    /* ide tedd az elektromos autós képet */
+}
 
 
 .speed-intro-records {
@@ -328,6 +529,7 @@ div.content {
     color: #111;
 }
 
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -338,13 +540,16 @@ div.content {
 }
 
 .speed-card {
-    background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    perspective: 1000px;
+    /* kell a 3D hatáshoz */
+    background: none;
+    /* háttér most nem kell, a front/back oldalak kapják */
 }
 
 .speed-card img {
@@ -357,9 +562,21 @@ div.content {
     padding: 20px;
 }
 
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
 .speed-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.speed-card.active .card-inner {
+    transform: rotateY(180deg);
 }
 
 .rank {
@@ -387,6 +604,46 @@ div.content {
     font-weight: bold;
     color: #007bff;
 }
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+
+.card-front img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.extra-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.speed-card.active .extra-content {
+    display: block;
+}
+
+
 
 
 
@@ -475,28 +732,64 @@ figure {
 
 /*Muscle page code*/
 
-div.muscle p {
-    padding: 10px;
+.intro {
+    font-size: 1.3em;
+    line-height: 1.7;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 35px;
+    background: linear-gradient(135deg, #1c1f26 0%, #4f5e6a 50%, #a8b0b9 100%);
+    color: #f0f0f0;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
 }
 
+
+
 div.muscle-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
+    display: grid;
+    gap: 15px;
     background-color: rgb(117, 129, 139);
     padding: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 oszlop nagy képernyőn */
+    justify-items: center;
+    max-width: 1200px;
+    /* Meghatározott szélesség */
+    margin: 0 auto;
+    /* Középre igazítja */
+    border-radius: 20px;
 }
+
 
 div.muscle-list>div {
     background-color: rgb(117, 129, 139);
     color: white;
-    width: 100px;
-    margin: 10px;
-    padding: 5px;
+    padding: 20px;
+    /* Egy kicsit több padding a kártyáknak */
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
+    /* Kicsit nagyobb szöveg */
+    box-sizing: border-box;
+    border-radius: 15px;
+    /* Lekerekített sarkok */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
 }
+
+div.muscle-list>div:hover {
+    transform: translateY(-8px);
+    /* Erősebb emelés */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    /* Erősebb árnyék */
+    background-color: rgb(137, 149, 159);
+}
+
+
 
 /* Float four columns side by side */
 div.column {
@@ -535,6 +828,12 @@ div.card img {
 }
 
 /*Future page code*/
+
+body.future-page header {
+    background-image: url(../img/rimac\ nevera_12.jpg);
+    /* ide tedd az elektromos autós képet */
+}
+
 
 
 .future-hero {
@@ -944,7 +1243,84 @@ footer {
     grid-area: footer;
     background-color: #d9e3ed;
     text-align: center;
-    padding: 30px;
+    padding: 40px 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+}
+
+/* Elválasztó vonalak */
+.footer-left::after,
+.footer-center::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 95%;
+    width: 2px;
+    background-color: #aaa;
+}
+
+/* Linkek és ikonok */
+.scroll-top {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.scroll-top:hover {
+    color: #0077aa;
+    transform: translateY(-3px);
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 8px;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077aa;
+}
+
+.github-link {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.github-link:hover {
+    color: #0077aa;
 }
 
 
@@ -963,6 +1339,40 @@ footer {
 
     header {
         background-image: url(../img/dodge\ challenger_4.jpeg);
+    }
+
+
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: static;
+        transform: none;
+        border-radius: 0;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .topnav a {
+        display: block;
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    /* A Home link elrejtése mobil nézetben */
+    .topnav a.home-link {
+        display: none;
+    }
+
+    .topnav .icon {
+        display: block;
+        top: 10px;
+        right: 20px;
+    }
+
+    .topnav a:first-child {
+        margin-top: 50px;
     }
 
     div.topnav a:not(:first-child) {
@@ -989,6 +1399,7 @@ footer {
         display: block;
         text-align: left;
     }
+
 
     /* Full-width containers */
     div.containerright {
@@ -1029,6 +1440,34 @@ footer {
         left: 0%;
     }
 
+    div.timeline::after {
+        display: none;
+    }
+
+    div.containerleft,
+    div.containerright {
+        width: 100%;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div.containerleft::before,
+    div.containerright::before,
+    div.containerleft::after,
+    div.containerright::after {
+        display: none;
+    }
+}
+
+/*Footer part code*/
+
+@media (max-width: 768px) {
+
+    .footer-left::after,
+    .footer-center::after {
+        display: none;
+    }
 }
 
 
@@ -1054,10 +1493,17 @@ footer {
     }
 }
 
-/* Kis kijelző: 2 oszlop */
+
 @media (max-width: 767px) {
     .card-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Kis kijelző: 1 oszlop */
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -1162,6 +1608,36 @@ footer {
         margin-bottom: 20px;
     }
 }
+
+
+
+/* Nagy képernyő: 3 oszlop */
+@media screen and (min-width: 900px) {
+    div.muscle-list {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 oszlop */
+    }
+}
+
+/* Közepes képernyők (600px-900px): 2 oszlop, 3 sor */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    div.muscle-list {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 oszlop */
+        grid-template-rows: repeat(3, auto);
+        /* 3 sor */
+    }
+}
+
+/* Mobil (600px alatt): 1 oszlop */
+@media screen and (max-width: 600px) {
+    div.muscle-list {
+        grid-template-columns: 1fr;
+        /* 1 oszlop */
+    }
+}
+
+
 
 
 

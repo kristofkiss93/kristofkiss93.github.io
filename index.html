@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Autócsodák a világ körül, a legkülönlegesebb autók egy helyen, a világ legerősebb, legdrágább, leggyorsabb és legszebb autói képekkel és adatokal.">
+        content="Explore the world's most extraordinary cars — a curated collection of beauty, speed, and power, with stunning photos and in-depth specifications.">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Kiss Márton Kristóf">
-    <title>Kiss Márton Kristóf vizsgamunka | Autócsodák</title>
+    <title>Kiss Márton Kristóf | The world's most extraordinary cars</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="img/icons8-speedometer-96.png" type="image/png">
 </head>
 
-<body>
+<body class="index-page">
 
     <div class="container">
 
         <header>
 
             <div class="topnav" id="myTopnav">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="home-link">Home</a>
                 <a href="records.html">Records</a>
                 <a href="muscle.html">Muscle Cars</a>
                 <a href="future.html">Future</a>
@@ -32,54 +32,118 @@
                 </a>
             </div>
 
+            <div class="header-content">
+                <h1>Welcome to the World of Cars!</h1>
+                <p>Discover the fastest and most powerful cars!</p>
+                <button class="cta-button" onclick="scrollToMainContent()">Explore Cars</button>
+            </div>
+
         </header>
 
-        <main>
+        <main id="main-content">
+
+            <section class="hero-introduction">
+                <div class="hero-introduction-content">
+                    <h1>139 Years of Automobile Innovation</h1>
+                    <p>From the invention of the first automobile to the revolutionary technologies shaping the future,
+                        discover how cars have changed the world over the past 139 years. Join us in exploring the
+                        milestones that define automotive history, and the icons that set the pace.</p>
+                    <div class="cta-links">
+                        <a href="muscle.html" class="cta-button">Muscle Cars</a>
+                        <a href="future.html" class="cta-button">Future of Cars</a>
+                        <a href="records.html" class="cta-button">Record Breaking Cars</a>
+                    </div>
+                </div>
+            </section>
 
             <section class="automobile-hero">
                 <div class="hero-content">
-                    <section class="history-section">
+                    <div class="history-section">
                         <h2 data-aos="fade-up">139 Years of Automobile</h2>
                         <div class="history-grid">
-        
+
                             <div class="history-card" data-aos="fade-up">
                                 <i class="fas fa-car-side history-icon"></i>
                                 <p>
-                                    Driving is more than transportation - it's passion, freedom, and a marvel of technology.
-                                    Early cars were noisy, slow, and unreliable, yet they sparked a revolution that changed how
+                                    Driving is more than transportation - it's passion, freedom, and a marvel of
+                                    technology.
+                                    Early cars were noisy, slow, and unreliable, yet they sparked a revolution that
+                                    changed how
                                     we live and move.
                                 </p>
                             </div>
-        
+
                             <div class="history-card" data-aos="fade-up" data-aos-delay="100">
                                 <i class="fas fa-gears history-icon"></i>
                                 <p>
-                                    Ford's assembly line turned cars into a product for the masses, transforming them from
-                                    luxury to everyday necessity. Over time, brands like Ferrari and Porsche elevated them into
+                                    Ford's assembly line turned cars into a product for the masses, transforming them
+                                    from
+                                    luxury to everyday necessity. Over time, brands like Ferrari and Porsche elevated
+                                    them into
                                     icons of speed and emotion.
                                 </p>
                             </div>
-        
+
                             <div class="history-card" data-aos="fade-up" data-aos-delay="200">
                                 <i class="fas fa-bolt history-icon"></i>
                                 <p>
                                     Today, the industry blends power with intelligence. Electric and autonomous cars are
-                                    redefining mobility, but the roar of a V8 and the thrill of driving still ignite hearts
+                                    redefining mobility, but the roar of a V8 and the thrill of driving still ignite
+                                    hearts
                                     worldwide.
                                 </p>
                             </div>
-        
+
                         </div>
-                    </section>
+                    </div>
                 </div>
-              </section>
-              
-            
+            </section>
+
+            <!-- Kiemelkedő autók és érdekességek szakasz -->
+            <section class="auto-icons">
+                <div class="auto-icons-content">
+                    <h2>Legendary Cars That Changed the Game</h2>
+                    <div class="auto-icons-cards">
+                        <div class="auto-card">
+                            <img src="img/Ford T model_2.jpg" alt="Ford Model T">
+                            <h3>Ford Model T</h3>
+                            <p>The first mass-produced car, changing the way automobiles were made and sold to the
+                                public.</p>
+                        </div>
+                        <div class="auto-card">
+                            <img src="img/ferrari f40.jpg" alt="Ferrari F40">
+                            <h3>Ferrari F40</h3>
+                            <p>One of the most iconic supercars ever made, combining speed with style and innovation.
+                            </p>
+                        </div>
+                        <div class="auto-card">
+                            <img src="img/tesla model s_4.jpg" alt="Tesla Model S">
+                            <h3>Tesla Model S</h3>
+                            <p>A breakthrough in electric cars, redefining luxury and performance while being
+                                eco-friendly.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
 
         </main>
 
         <section>
+            <div class="intro-text-index">
+                <h2><span class="highlight">Driven by Passion</span></h2>
+                <p>
+                    Cars have come a long way since the first sputtering motorwagen of 1886. This timeline dives into
+                    the key moments that shaped automotive history —
+                    from the birth of combustion to the rise of electrification and beyond.
+                </p>
+                <p>
+                    This site is a tribute to those milestones, built by a fellow petrolhead for anyone who feels a
+                    pulse quicken at the roar of an engine.
+                </p>
+            </div>
             <h2>History of Automobile</h2>
             <div class="timeline">
                 <div class="containerleft">
@@ -190,8 +254,31 @@
         </section>
 
         <footer>
-            &copy; Kiss Márton Kristóf 2025 | All rights reserved.
+            <div class="footer-container">
+                <div class="footer-left">
+                    <a href="#" class="scroll-top"> ↑ Back to the Top ↑ </a>
+                </div>
+                <div class="footer-center">
+                    &copy; Kiss Márton Kristóf 2025 | All rights reserved.
+                </div>
+                <div class="footer-right">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/topgear" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/topgear" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/bbc_topgear" target="_blank" aria-label="Twitter"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/topgear" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="https://github.com/kristofkiss93" target="_blank" class="github-link">MyGitHub</a>
+                </div>
+            </div>
         </footer>
+
     </div>
 
     <script src="main.js"></script>

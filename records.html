@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Autócsodák a világ körül, a legkülönlegesebb autók egy helyen, a világ legerősebb, legdrágább, leggyorsabb és legszebb autói képekkel és adatokal.">
+        content="Explore the world's most extraordinary cars — a curated collection of beauty, speed, and power, with stunning photos and in-depth specifications.">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Kiss Márton Kristóf">
-    <title>Kiss Márton Kristóf vizsgamunka | Autócsodák</title>
+    <title>Kiss Márton Kristóf | The world's most extraordinary cars</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="img/icons8-speedometer-96.png" type="image/png">
 </head>
 
-<body>
+<body class="records-page">
 
     <div class="container">
 
         <header>
 
             <div class="topnav" id="myTopnav">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="home-link">Home</a>
                 <a href="records.html">Records</a>
                 <a href="muscle.html">Muscle Cars</a>
                 <a href="future.html">Future</a>
@@ -39,8 +40,9 @@
             <h2>Top 10 Fastest Cars in the World</h2>
 
             <div class="card-grid">
+
                 <div class="speed-card">
-                    <img src="img/bugatti chiron_7.jpg" alt="Bugatti Chiron">
+                    <img src="img/bugatti chiron_7_resize.jpg" alt="Bugatti Chiron">
                     <div class="card-content">
                         <span class="rank">#1</span>
                         <h3>Bugatti</h3>
@@ -50,7 +52,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/koenigsegg jesko absolut_8.jpg" alt="Koenigsegg Jesko">
+                    <img src="img/koenigsegg jesko absolut_9_resize.jpg" alt="Koenigsegg Jesko">
                     <div class="card-content">
                         <span class="rank">#2</span>
                         <h3>Koenigsegg</h3>
@@ -60,7 +62,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/ssc tuatara_3.jpg" alt="SSC Tuatara">
+                    <img src="img/ssc tuatara_3_resize.jpg" alt="SSC Tuatara">
                     <div class="card-content">
                         <span class="rank">#3</span>
                         <h3>SSC</h3>
@@ -70,7 +72,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/koenigsegg.jpg" alt="Koenigsegg Agera RS">
+                    <img src="img/koenigsegg_resize.jpg" alt="Koenigsegg Agera RS">
                     <div class="card-content">
                         <span class="rank">#4</span>
                         <h3>Koenigsegg</h3>
@@ -80,7 +82,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/hennessey venom gt_2.jpg" alt="Hennessey Venom F5">
+                    <img src="img/hennessey venom gt_3_resize.jpg" alt="Hennessey Venom F5">
                     <div class="card-content">
                         <span class="rank">#5</span>
                         <h3>Hennessey</h3>
@@ -90,7 +92,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/bugatti veyron.jpg" alt="Bugatti Veyron Super Sport">
+                    <img src="img/bugatti veyron_resize.jpg" alt="Bugatti Veyron Super Sport">
                     <div class="card-content">
                         <span class="rank">#6</span>
                         <h3>Bugatti</h3>
@@ -100,7 +102,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/rimac nevera_10.jpg" alt="Rimac Nevera">
+                    <img src="img/rimac nevera_10_resize.jpg" alt="Rimac Nevera">
                     <div class="card-content">
                         <span class="rank">#7</span>
                         <h3>Rimac</h3>
@@ -110,7 +112,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/ssc ultimate aero_2.jpg" alt="Rimac Nevera">
+                    <img src="img/ssc ultimate aero_2_resize.jpg" alt="Rimac Nevera">
                     <div class="card-content">
                         <span class="rank">#8</span>
                         <h3>SSC</h3>
@@ -120,7 +122,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/bugatti veyron_2.jpg" alt="Rimac Nevera">
+                    <img src="img/bugatti veyron_3_resize.jpg" alt="Rimac Nevera">
                     <div class="card-content">
                         <span class="rank">#9</span>
                         <h3>Bugatti</h3>
@@ -130,7 +132,7 @@
                 </div>
 
                 <div class="speed-card">
-                    <img src="img/mclaren.jpg" alt="McLaren Speedtail">
+                    <img src="img/mclaren_resize.jpg" alt="McLaren Speedtail">
                     <div class="card-content">
                         <span class="rank">#10</span>
                         <h3>McLaren</h3>
@@ -139,6 +141,7 @@
                     </div>
                 </div>
             </div>
+            
         </main>
 
         <section>
@@ -146,13 +149,16 @@
             <section class="speed-intro-records">
                 <div class="intro-text-records">
                     <p>
-                        <em>"The world of speed knows no limits. In the 21st century, automakers have been locked in a relentless battle, 
-                        pushing the boundaries of what's possible and rewriting the definition of 'fast.' These aren't just vehicles — they're 
-                        feats of engineering that made history with every acceleration.</em>
+                        <em>"The world of speed knows no limits. In the 21st century, automakers have been locked in a
+                            relentless battle,
+                            pushing the boundaries of what's possible and rewriting the definition of 'fast.' These
+                            aren't just vehicles — they're
+                            feats of engineering that made history with every acceleration.</em>
                     </p>
                     <p>
-                        <em>Each car featured here once held the title of the world's fastest production car — each one a champion of its time, 
-                        only to be surpassed by the next."</em>
+                        <em>Each car featured here once held the title of the world's fastest production car — each one
+                            a champion of its time,
+                            only to be surpassed by the next."</em>
                     </p>
                 </div>
             </section>
@@ -251,7 +257,29 @@
 
 
         <footer>
-            &copy; Kiss Márton Kristóf 2025 | All rights reserved.
+            <div class="footer-container">
+                <div class="footer-left">
+                    <a href="#" class="scroll-top"> ↑ Back to the Top ↑ </a>
+                </div>
+                <div class="footer-center">
+                    &copy; Kiss Márton Kristóf 2025 | All rights reserved.
+                </div>
+                <div class="footer-right">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/topgear" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/topgear" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/bbc_topgear" target="_blank" aria-label="Twitter"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/topgear" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="https://github.com/kristofkiss93" target="_blank" class="github-link">MyGitHub</a>
+                </div>
+            </div>
         </footer>
 
     </div>
