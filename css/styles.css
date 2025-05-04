@@ -2229,6 +2229,7 @@ footer {
     body.future-page .logo {
         display: block;
         text-align: center;
+        z-index: 150;
     }
 
     body.future-page .logo img {
