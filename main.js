@@ -9,7 +9,6 @@ function myFunction() {
   }
 }
 
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -26,12 +25,7 @@ document.querySelectorAll('.containerleft, .containerright').forEach(el => {
   observer.observe(el);
 });
 
-
-
-// Lekérjük az aktuális oldal fájlnevét és eltávolítjuk az esetleges keresőparamétereket
 const currentPage = window.location.pathname.split("/").pop().split("?")[0];
-
-// console.log(currentPage); // ideiglenesen bekapcsolható hibakereséshez
 
 document.querySelectorAll('.topnav a').forEach(link => {
   const linkPage = link.getAttribute('href');
@@ -45,26 +39,47 @@ document.querySelectorAll('.topnav a').forEach(link => {
 //Header button script
 
 function scrollToMainContent() {
-  const mainSection = document.getElementById('main-content');  // Megkeressük a main szakaszt
-  mainSection.scrollIntoView({ behavior: 'smooth' });  // Görgetés a szakaszhoz
+  const mainSection = document.getElementById('main-content');  
+  mainSection.scrollIntoView({ behavior: 'smooth' });  
 }
-
-
-
 
 //Records page script
 
-const cards = document.querySelectorAll('.speed-card');
-
-cards.forEach(card => {
+document.querySelectorAll('.speed-card').forEach(card => {
   card.addEventListener('click', () => {
-    card.classList.toggle('active');
+      card.classList.toggle('flipped');
   });
 });
 
+//Muscle page script
 
+document.addEventListener("DOMContentLoaded", function () {
+  const lightboxLinks = document.querySelectorAll(".lightbox");
+  const modal = document.getElementById("lightbox-modal");
+  const modalImg = modal.querySelector("img");
+  const closeBtn = modal.querySelector(".close");
 
+  lightboxLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const imgSrc = this.getAttribute("href");
+      modalImg.src = imgSrc;
+      modal.style.display = "flex";
+    });
+  });
 
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    modalImg.src = "";
+  });
+
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      modalImg.src = "";
+    }
+  });
+});
 
 //Future page script
 
@@ -90,7 +105,6 @@ document.querySelectorAll('.slider').forEach(function (slider) {
 
   showSlide(current);
 });
-
 
 //Contact page script
 

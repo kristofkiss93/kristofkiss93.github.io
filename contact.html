@@ -1,50 +1,56 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Explore the world's most extraordinary cars — a curated collection of beauty, speed, and power, with stunning photos and in-depth specifications.">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+        content="Have questions or want to connect? Get in touch with us via our contact form. We're happy to hear from fellow car enthusiasts.">
+    <meta name="keywords"
+        content="contact, get in touch, car blog contact, message us, car website email, automotive inquiries, contact form">
     <meta name="author" content="Kiss Márton Kristóf">
-    <title>Kiss Márton Kristóf | The world's most extraordinary cars</title>
+    <title>Contact Us - Get in Touch | SpeedEra</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" href="img/icons8-speedometer-96.png" type="image/png">
+    <link rel="icon" href="img/speedera-logo.png" type="image/png">
 </head>
 
-<body>
+<body class="contact-page">
 
     <div class="container">
 
         <header>
-
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" class="home-link">Home</a>
-                <a href="records.html">Records</a>
-                <a href="muscle.html">Muscle Cars</a>
-                <a href="future.html">Future</a>
-                <a href="contact.html">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <div class="topnav-wrapper">
+                <div class="logo">
+                    <img src="img/speedera-logo.png" alt="SpeedEra website logo">
+                </div>
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="home-link">Home</a>
+                    <a href="records.html">Records</a>
+                    <a href="muscle.html">Muscle Cars</a>
+                    <a href="future.html">Future</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </div>
-
+            <div class="header-content-contact">
+                <h1>Contact Us!</h1>
+                <p>We'd love to hear from you. Reach out with any questions or feedback!</p>
+            </div>
         </header>
 
         <main class="contact-main">
             <div class="contact-container">
-                <!-- LEFT SIDE: Info + Map -->
                 <div class="contact-info">
                     <h2>Contact Information</h2>
-                    <p><i class="fa fa-envelope"></i> info@autowonders.com</p>
+                    <p><i class="fa fa-envelope"></i> info@speedera.com</p>
                     <p><i class="fa fa-phone"></i> +36 30 123 4567</p>
                     <p><i class="fa fa-map-marker"></i> Budapest, Hungary</p>
                     <p><i class="fa fa-clock-o"></i> Mon - Fri: 9:00 AM - 5:00 PM</p>
-
                     <div class="map-container">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172546.31871628002!2d19.030360337969128!3d47.48920757016557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest!5e0!3m2!1sen!2shu!4v1745405742197!5m2!1sen!2shu"
@@ -53,28 +59,21 @@
                     </div>
                 </div>
 
-
-
-                <!-- RIGHT SIDE: Contact form -->
                 <div class="contact-form">
                     <h1>Get in Touch</h1>
                     <p>Have a question or message? Fill out the form and we'll get back to you shortly!</p>
                     <form action="#">
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Your email address" required>
-
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" placeholder="Your phone number">
-
                         <label for="message">Message</label>
                         <textarea id="message" placeholder="Write your message here..." required></textarea>
-
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
 
-            <!-- SOCIAL MEDIA -->
             <div class="social-media">
                 <a href="https://www.facebook.com/topgear" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/topgear" target="_blank"><i class="fab fa-instagram"></i></a>
