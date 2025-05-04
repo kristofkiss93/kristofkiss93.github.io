@@ -130,6 +130,7 @@ div.topnav .icon {
 .logo {
     margin: 0;
     padding: 10px 20px;
+    z-index: 150;
 }
 
 .logo:hover {
@@ -1680,7 +1681,7 @@ footer {
         position: absolute;
         top: 10px;
         left: 10px;
-        z-index: 150;
+        z-index: 200;
         padding: 0;
     }
 
@@ -2229,7 +2230,7 @@ footer {
     body.future-page .logo {
         display: block;
         text-align: center;
-        z-index: 150;
+        z-index: 200;
     }
 
     body.future-page .logo img {
